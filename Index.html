@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Deen Dritan - Customize Your T-Shirt</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Deen Dritan</h1>
+    <p>Customize Your T-Shirt</p>
+  </header>
+
+  <section class="form-container">
+    <form id="orderForm">
+      <label>T-Shirt Type:</label>
+      <select id="type">
+        <option>Round Neck</option>
+        <option>Polo</option>
+        <option>Oversized</option>
+        <option>Long Sleeve</option>
+      </select>
+
+      <label>Fabric:</label>
+      <select id="fabric">
+        <option>Cotton</option>
+        <option>Dry Fit</option>
+        <option>Polyester</option>
+      </select>
+
+      <label>Color:</label>
+      <select id="color">
+        <option>White</option>
+        <option>Black</option>
+        <option>Red</option>
+        <option>Blue</option>
+        <option>Green</option>
+      </select>
+
+      <label>Size:</label>
+      <select id="size">
+        <option>S</option>
+        <option>M</option>
+        <option>L</option>
+        <option>XL</option>
+        <option>XXL</option>
+      </select>
+
+      <label>Upload Your Design:</label>
+      <input type="file" id="design" accept="image/*" disabled>
+      <small>(We’ll receive your design via follow-up message)</small>
+
+      <label>Your Name:</label>
+      <input type="text" id="name" required>
+
+      <label>Phone Number:</label>
+      <input type="tel" id="phone" required>
+
+      <label>Address:</label>
+      <textarea id="address" required></textarea>
+
+      <label>Delivery Area:</label>
+      <select id="area">
+        <option value="30">Rampura - 30 Tk</option>
+        <option value="40">Banasree - 40 Tk</option>
+        <option value="40">Mailbag - 40 Tk</option>
+        <option value="60">Badda - 60 Tk</option>
+        <option value="50">Khilgaon - 50 Tk</option>
+        <option value="70">Dhaka East - 70 Tk</option>
+        <option value="80">Inside Dhaka - 80 Tk</option>
+        <option value="120">Outside Dhaka - 120 Tk</option>
+      </select>
+
+      <button type="button" onclick="submitOrder()">Order Now</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>Price: 450 BDT + Delivery | Designed by Deen Dritan</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
